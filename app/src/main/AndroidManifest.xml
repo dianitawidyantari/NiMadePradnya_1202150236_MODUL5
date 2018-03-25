@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.widya.nimadepradnya_1202150236_modul5">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="To Do App - NiMadePradnya_1202150236_MODUL5"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:label="To Do App - NiMadePradnya_1202150236_MODUL5">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".SettingActivity" android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>

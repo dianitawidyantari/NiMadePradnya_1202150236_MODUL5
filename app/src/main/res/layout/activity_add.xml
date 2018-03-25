@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.widya.nimadepradnya_1202150236_modul5.AddActivity">
+
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="Todo Name"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="Description"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="Priority"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textSize="17sp"
+                    android:id="@+id/inputname"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:id="@+id/inputdescription"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:textSize="17sp"
+                    android:id="@+id/inputpriority"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:onClick="nambahtodo"
+            android:id="@+id/btnAdd"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="50dp"
+            android:text="tambah todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
